@@ -13,10 +13,10 @@ func IndentJSON(input string) string {
 		return fmt.Sprintf("JSON unmarshal error: %v", err)
 	}
 
-	indentedJson, err := json.MarshalIndent(&rawMessage, "", "  ")
+	res, err := json.MarshalIndent(&rawMessage, "", "  ")
 	if err != nil {
 		return fmt.Sprintf("JSON marshal error: %v", err)
 	}
 
-	return string(indentedJson)
+	return string(res)
 }
