@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-// JSONのインデントを整形する
 func IndentJSON(input string) string {
 	var rawMessage json.RawMessage
 

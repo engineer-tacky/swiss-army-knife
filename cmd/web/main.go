@@ -7,9 +7,7 @@ import (
 )
 
 func main() {
-	// json IndentJSON のルーティング(POST)
 	http.HandleFunc("/json/indent", handler.JSONIndentHandler)
 
-	// サーバーを起動
 	http.ListenAndServe(":8080", nil)
 }
