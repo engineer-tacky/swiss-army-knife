@@ -6,7 +6,7 @@ import (
 	"github.com/engineer-tacky/swiss-army-knife/internal/utils"
 )
 
-func TestIndentJSON(t *testing.T) {
+func TestIndentJson(t *testing.T) {
 	tests := []struct {
 		name   string
 		input  string
@@ -41,7 +41,7 @@ func TestIndentJSON(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			actual := utils.IndentJSON(tt.input)
+			actual := utils.IndentJson(tt.input)
 			if actual != tt.expect {
 				t.Errorf("unexpected result: actual: %v, expect: %v", actual, tt.expect)
 			}

@@ -24,7 +24,7 @@ func main() {
 
 	if inputType == JSON && action == INDENT {
 		input := inputString
-		json := utils.IndentJSON(input)
+		json := utils.IndentJson(input)
 		fmt.Println(json)
 	}
 }

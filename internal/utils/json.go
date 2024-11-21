@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func IndentJSON(input string) string {
+func IndentJson(input string) string {
 	var rawMessage json.RawMessage
 
 	err := json.Unmarshal([]byte(input), &rawMessage)

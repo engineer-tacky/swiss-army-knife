@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/json/indent", handler.JSONIndentHandler)
+	http.HandleFunc("/json/indent", handler.JsonIndentHandler)
 
 	http.ListenAndServe(":8080", nil)
 }
